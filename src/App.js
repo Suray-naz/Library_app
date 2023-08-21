@@ -5,6 +5,7 @@ import { GlobalStyles } from "./styles/Global.styles";
 import AuthContextProvider from "./context/AuthContext";
 import { useContext } from "react";
 import { ThemeContext } from "./context/ThemeContext";
+import BooksContextProvider from "./context/BooksContext";
 
 function App() {
   const { myTheme } = useContext(ThemeContext);
@@ -13,7 +14,9 @@ function App() {
       <ThemeProvider theme={myTheme === "light" ? lightTheme : darktheme}>
         <GlobalStyles />
         <AuthContextProvider>
-          <AppRouter />
+          <BooksContextProvider>
+            <AppRouter />
+          </BooksContextProvider>
         </AuthContextProvider>
       </ThemeProvider>
     </>

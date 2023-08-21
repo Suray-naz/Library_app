@@ -26,8 +26,8 @@ const AppRouter = () => {
         </Route> */}
 
         <Route element={<PrivateRouter />}>
-          <Route path="/about" element={<About/>} />
-          <Route path="/detail/:id" element={<Detail/>} />
+          <Route path="/about" element={<About />} />
+          <Route path="/detail/:id" element={<Detail />} />
         </Route>
       </Routes>
       <Footer />

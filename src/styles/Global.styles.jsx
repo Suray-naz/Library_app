@@ -13,9 +13,7 @@ body {
     background-color: ${({ theme }) => theme.colors.mainColor};
     font-size: 1.5rem;
 }
-
-
-a{
+a {
     text-decoration: none;
 }
 

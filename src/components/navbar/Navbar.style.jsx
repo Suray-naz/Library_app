@@ -31,7 +31,7 @@ export const Menu = styled(Flex)`
     flex-direction: column;
     width: 100%;
     transition: all 1s;
-    max-height: ${({ showMenu }) => (showMenu ? "330px" : "0px")};
+    max-height: ${({ showMenu }) => (showMenu ? "330px" : "0px")};/* showMenu değerini props olarak aldıkki gelen değere göre yüksekliği belirleyerek menunun kapanıp açılmasını sağladık. Yükseklik 0 olduğunda hidden özelliği sayesinde ekrandan kaybetmiş olduk. */
     overflow: hidden;
   }
 `;
